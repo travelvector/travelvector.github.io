@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Public identity page for the Travelvector Discovery Agent.">
+  <title>Travelvector Discovery Agent</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17231d;
+      --paper: #f4f1e8;
+      --accent: #c4512d;
+      --line: #c9c1af;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px;
+      color: var(--ink);
+      background:
+        linear-gradient(135deg, rgba(196, 81, 45, 0.10), transparent 42%),
+        repeating-linear-gradient(0deg, transparent 0 31px, rgba(23, 35, 29, 0.04) 32px),
+        var(--paper);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    main {
+      width: min(720px, 100%);
+      border-top: 6px solid var(--accent);
+      border-bottom: 1px solid var(--line);
+      padding: 44px 0 36px;
+    }
+    .kicker {
+      margin: 0 0 18px;
+      color: var(--accent);
+      font: 700 0.76rem/1.4 ui-monospace, monospace;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      max-width: 10ch;
+      font-size: clamp(3rem, 10vw, 6rem);
+      font-weight: 500;
+      line-height: 0.92;
+      letter-spacing: -0.055em;
+    }
+    .lead {
+      max-width: 42rem;
+      margin: 32px 0;
+      font-size: 1.25rem;
+      line-height: 1.65;
+    }
+    section {
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1rem;
+      font-family: ui-monospace, monospace;
+      letter-spacing: 0.04em;
+    }
+    section p, .meta {
+      max-width: 42rem;
+      line-height: 1.65;
+    }
+    .meta { margin-top: 28px; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="kicker">Travelvector / Agent Tooling</p>
+    <h1>Discovery Agent</h1>
+    <p class="lead">
+      A local, user-operated agent tool for discovering public game metadata
+      and research references across supported platforms.
+    </p>
+    <section>
+      <h2>Steam Web API use</h2>
+      <p>
+        This application uses the Steam Web API to retrieve public game and
+        community metadata for personal research and development workflows.
+        This website does not collect credentials, API keys, or personal data.
+      </p>
+    </section>
+    <p class="meta">Operator: <a href="https://github.com/travelvector">@travelvector</a></p>
+  </main>
+</body>
+</html>
